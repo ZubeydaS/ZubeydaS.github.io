@@ -1102,6 +1102,7 @@ header .top-bar {
 	left: 90px;
 	top: 0;
 }
+
 header .top-bar .menu-text {
 	color: white; /* Text color */
 	font-size: 16px; /* Adjust font size */
@@ -1133,10 +1134,15 @@ header .logo a {
 	background-size: 92px 15px;
 }
 
-/**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
+/* Google Translate */
+.google-translate {
+    position: fixed;        /* Keeps it in a fixed position on the page */
+    top: 10px;              /* 10px from the top */
+    left: 10px;             /* 10px from the left */
+    z-index: 9999;          /* Ensures it's above other content */
+    background-color: white; /* adds a background for visibility */
+    padding: 5px;            /* adds padding to the widget */
+}
 .menu-toggle {
 	float: left;
 	width: 40px;

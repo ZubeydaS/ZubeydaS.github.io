@@ -37,14 +37,16 @@
 	<!-- header 
    ================================================== -->
    <header>   	
-   	<div class="row">
+	<div class="row">
 
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+		<div class="top-bar">
+			<span class="menu-text" role="button" tabindex="0">Menu</span> <!-- Add this line for the "Menu" text -->
+			
+			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-	   		<div class="logo-1">
-		         <a href="index.html">NAVIGATE</a>
-		      </div>		      
+            <!-- Google Translate Dropdown -->
+            <div id="google_translate_element"></div>
+     
 
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
@@ -63,6 +65,22 @@
 	<!-- intro section
    ================================================== -->
    <section id="intro">   
+
+   <!-- Google Translate Scripts -->
+   <script type="text/javascript">
+	function googleTranslateElementInit() {
+	   new google.translate.TranslateElement(
+		  {
+			 pageLanguage: 'en',
+			 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+		  }, 
+		  'google_translate_element'
+	   );
+	}
+ </script>
+ <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+</body>
+</html>
 
    	<div class="intro-overlay"></div>	
 
@@ -111,7 +129,7 @@
 
    				<img src="images/pfp1.png" alt="Profile Picture">
 
-   				<p class="lead">Hi, I'm Zubeyda, a third-year Computer Science student at Carleton College pursuing a minor in Philosophy. Originally from Maine, I'm passionate about how technology intersects with society, especially when it comes to ethical considerations. I aim to contribute to the conversations about responsible innovation in artificial intelligence, privacy, and automation. In my free time, I enjoy spending time with my two cats, Darien and Mateo, as well as baking and reading. As a first-generation student, I'm driven by a desire to make an impact in the tech world and create opportunities for others like me. I'm currently seeking career opportunities where I can further explore software development and ethical tech for the Summer of 2025. So If you’re interested in discussing anything from technology to ethics or if you just want to chat about cats or baking, feel free to reach out. I'm excited about the future, and I can't wait to see where my path in tech leads me! Thank you for stopping by!</p>
+   				<p class="lead">Hi, I'm Zubeyda, a third-year Computer Science student at Carleton College pursuing a minor in Philosophy. Originally from Maine, I'm passionate about how technology intersects with society, especially when it comes to ethical considerations. I aim to contribute to the conversations about responsible innovation in artificial intelligence, privacy, and automation. In my free time, I enjoy spending time with my two cats, Darien and Mateo, as well as baking and reading. As a first-generation student, I'm driven by a desire to make an impact in the tech world and create opportunities for others. <strong>I'm currently seeking career opportunities where I can further explore software development and ethical tech for the Summer of 2025</strong>. So If you’re interested in discussing anything from technology to ethics or if you just want to chat about cats or baking, feel free to reach out. I'm excited about the future, and I can't wait to see where my path in tech leads me! Thank you for stopping by!</p>
    			</div>   			
 
    		</div>   		
@@ -200,7 +218,7 @@
    			<h5>Resume</h5>
    			<h1>More of my credentials.</h1>
 
-   			<p class="lead">A brief overview of my working and education experiances with more to come.</p>
+   			<p class="lead">A brief overview of my working and education experiances with more to come. A blend of advocacy, community, and tech work experiance</p>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -224,12 +242,12 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>UI Designer</h3>
+	   					<h3>Data Entry Manager</h3>
 	   					<p>July 2015 - Present</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Awesome Studio</h4>
+	   					<h4>Interpret Maine</h4>
 	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
 	   				</div>
 
@@ -242,12 +260,12 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Front-end Developer</h3>
+	   					<h3>Youth Peer Support Partner</h3>
 	   					<p>July 2014 - June 2015</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Super Cool Agency</h4>
+	   					<h4>The Opportunity Alliance</h4>
 	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
 	   				</div>
 
@@ -260,12 +278,12 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Web Designer</h3>
+	   					<h3>Game Design</h3>
 	   					<p>May 2013 - June 2014</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Great Designs Studio</h4>
+	   					<h4>SayKid</h4>
 	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
 	   				</div>
 
@@ -380,7 +398,7 @@
 	            <div id="modal-01" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="HCI" />
 				     	</div>      	
 
 					   <div class="description-box">
@@ -442,7 +460,7 @@
 						</h3>
 
 						<h5 class="stat-title">
-							Happy Clients
+							Crash Outs
 						</h5>
 
 					</div> <!-- /stat -->
@@ -458,7 +476,7 @@
 						</h3>
 
 						<h5 class="stat-title">
-							Awards Received
+							Copes
 						</h5>
 
 					</div> <!-- /stat -->									

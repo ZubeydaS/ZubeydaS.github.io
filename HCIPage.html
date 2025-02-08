@@ -1,15 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HCI Project - Under Construction</title>
-</head>
-<body bgcolor="#f0f0f0" text="#000000">
 
-    <h1 align="center">HCI Project Page</h1>
-    <p align="center"><i>This page is under construction. Check back soon!</i></p>
+<head>
+
+    <!--- basic page needs       
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>CarlsEat Prototype: Carleton Food Rating & Sharing</title>
+    <meta name="description" content="Human Computer Interaction Project: CarlsEat.">
+    <meta name="author" content="ZubeydaS">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- General Style (Adapted from parts of main.css)
+   ================================================== -->
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        h1 {
+            font-family: 'Lora', serif;
+            background-color: #000000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #FF0077;
+            padding-bottom: 5px;
+        }
+
+        a {
+            color: #FF0077;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Layout Adjustments */
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .content-wrapper>div {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .content-wrapper img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Button Section */
+
+        .button-section {
+            text-align: center;
+        }
+
+        .button-section .button {
+            background-color: #FF0077;
+            color: white;
+            padding: 5px 20px;
+            font-size: 15px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-section .button:hover {
+            background-color: #D4006B;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries & Adjusting*/
+        @media only screen and (max-width: 768px) {
+            section {
+                padding: 15px;
+                margin: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+                padding: 15px 0;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .button-section .button {
+                width: 100%;
+                padding: 15px;
+                font-size: 16px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CarlsEat Prototype: Carleton Food Rating & Sharing</h1>
+
+    <!-- Combined Team Members and Project Overview Section -->
+    <section>
+        <h2>About the Project</h2>
+        <div class="content-wrapper">
+            <div>
+                <h3>Team Members</h3>
+                <ul>
+                    <li>Chloe Simanek</li>
+                    <li>Ekow Brandon Anderson</li>
+                    <li>Scott Gevurts</li>
+                    <li>ฅ՞•ﻌ•՞ฅ</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Project Description</h3>
+                <p>
+                    Our goal is to prototype a Carleton College food rating app called <strong>CarlsEat</strong> that
+                    allows students to easily capture images and descriptions of their food, rate dishes, and share this
+                    information with fellow users. This project addresses common issues like food quality concerns,
+                    easier feedback options for dining hall issues, and alternative sources for meals by students
+                    posting recipes themselves.
+                </p>
+                <p>
+                    With CarlsEat, students will be able to better understand the dining options available to them,
+                    assess the quality of food, and find alternatives that meet their dietary needs while strengthening
+                    community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Figma Prototype -->
+    <section>
+        <h2>Low-Fidelity Figma Prototype</h2>
+        <p>Below are screenshots of my low-fidelity prototype, showing the main interface and essential features:</p>
+
+        <div class="content-wrapper">
+            <div>
+                <img src="login.jpg"
+                    alt="Screenshot of CarlsEat prototype showing the login screen with username and password fields or guest">
+                <p><strong>Login or Guest Page:</strong> Login screen with username and password fields. Or a guest
+                    option.</p>
+            </div>
+            <div>
+                <img src="homepage.jpg"
+                    alt="Screenshot of CarlsEat prototype showing the homepage with navigation options">
+                <p><strong>Homepage:</strong> Welcoming homepage with a navigation menu and search bar.</p>
+            </div>
+            <div>
+                <img src="profile.jpg"
+                    alt="Screenshot of CarlsEat prototype showing the user profile screen and saved recipes and reviews">
+                <p><strong>Profile:</strong> Profile screen showing user details and potential saved recipes and
+                    reviews.</p>
+            </div>
+            <div>
+                <img src="reviews.jpg"
+                    alt="Screenshot of CarlsEat prototype showing the review screen with user input and feedback options">
+                <p><strong>Making a Review:</strong> Review screen showing user feedback options.</p>
+            </div>
+            <div>
+                <img src="recipes.jpg"
+                    alt="Screenshot of CarlsEat prototype showing the recipes screen with meal details from other students">
+                <p><strong>Recipes:</strong> Recipes screen with meals from other users.</p>
+            </div>
+            <div>
+                <img src="menu.jpg"
+                    alt="Screenshot of the CarlsEat prototype showing the menu options from campus dining areas with a review and menu button">
+                <p><strong>Dining</strong> Menu screen showing all campus dining areas with a review and menu button</p>
+            </div>
+            <p>Credits of icons are sourced from the Figma Library [Hayfi Studio] and FigJam tutorial. Imagery of
+                Carleton's campus photo and logo are not owned by me. ฅ՞•ﻌ•՞ฅ </p>
+        </div>
+    </section>
+
+    <!-- User Needs & Concerns Section: Requirements Elicitation-->
+    <section>
+        <h2>How the Prototype Addresses User Needs</h2>
+        <p>
+            Based on our user research and the elicitation process, which included focus groups and interviews with
+            Carleton students, this prototype offers an intuitive platform for sharing dining experiences. Students will
+            be able to rate food, capture images, and identify alternatives for specific dietary needs, particularly for
+            those with food allergies or dietary restrictions. This addresses the need for an easy to navigate app that
+            combines multiple functions of the dining hall experience into one app, while simultaneously allowing users
+            to provide their input and feedback to create a better dining hall experience.
+        </p>
+        <p>
+            Making the app accessible to non-Carleton users was a topic of discussion during one focus group interview. 
+            This was a thoughtful suggestion to use in the planning so that parents or visitors can see dining hall options
+            and reviews in an efficient manner. Another area of concern was the general quality of the dining hall food and 
+            issue of cross contamination with allergens. This concern can be properly addressed with CarlsEat due to the 
+            social element of the app. Users can leave reviews of foods they enjoyed, but also of those that might pose risk.
+            This social element could cause change if enough people leave reviews of the same issue, rather than the feedback
+            option provided currently which creates a more confrontational environment. With this interface, feedback remains
+            constructive and efficient.   
+        </p>
+    </section>
+
+    <!--  https://www.w3schools.com/JS/tryit.asp?filename=tryjs_alert  -->
+    <!-- Under Construction PopUp -->
+    <script>
+        // Function to show pop up message
+        function UnderConstructionMessage() {
+            alert("Tricked you! The full prototype is still under construction. Please check back later!");
+        }
+    </script>
+    <section class="button-section">
+        <button class="button" onclick="UnderConstructionMessage()">Full Prototype?</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><i>This page is under construction. Check back soon!</i></p>
+        <p><i>ฅ՞•ﻌ•՞ฅ</i></p>
+    </footer>
 
 </body>
+
 </html>

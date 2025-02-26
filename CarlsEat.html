@@ -142,6 +142,38 @@
                 font-size: 16px;
             }
         }
+
+        /* Style for the summary element in details */
+        /* https://www.w3schools.com/TAGs/tag_summary.asp */
+        details summary {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f8f8f8;
+            color: #333;
+            border: 2px solid #333;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        details summary:hover {
+            text-decoration: underline;
+            color: #FF0077;
+            border-color: #FF0077; 
+        }
+        
+        details[open] summary {
+            background-color: #FF0077;
+            color: white;
+            border-color: #FF0077;
+        }
+
+        details ol {
+            padding-left: 50px;
+            list-style-type: circle;
+            font-size: 1.4rem;
+        }
+
     </style>
 
 </head>
@@ -181,9 +213,480 @@
         </div>
     </section>
 
-    <!-- Figma Prototype -->
+    <!-- Team UX Research Process Section Based on Team Deliverable: Requirements Elicitation Protocols -->
+    <!--https://www.w3schools.com/Tags/tag_blockquote.asp-->
     <section>
-        <h2>Low-Fidelity Figma Prototype</h2>
+            <h2>Team UX Research Process</h2>
+            <p>
+            Our team conducted a combination of <strong>semi-structured interviews</strong> and <strong>focus groups</strong> to gather user insights. The research process included:
+            </p>
+            <ul>
+                <li>2 one-on-one semi-structured interviews.</li>
+                <li>3 participatory design interviews utilizing focus groups.</li>
+                <li>A total of 8 participants contributed feedback, resulting in 5 interviews conducted by team members overall.</li>
+            </ul>
+            <p>
+            This interview style allowed for direct questions and answers, leading to actionable user insights. Some notable user feedback included:
+            </p>
+            <blockquote>
+            “I think it would be cool to see what other people are making, and I might get ideas from that.”
+            </blockquote>
+            <blockquote>
+            “It would be great for people to take photos of the meals. Like, 'Hey guys, this is what it looks like.' You know what I mean?"
+            </blockquote>
+            <blockquote>
+            “I have allergies, and Carleton is not so great about cross-contamination.”
+            </blockquote>
+            <p>
+            Key themes that emerged from the research included concerns about allergens, convenience, pricing, meal quality, and social engagement.
+            </p>
+    </section>
+    
+     <!-- Team Analysis Process Section Based on Team Deliverable: Requirements Generation -->
+    <!--https://www.w3schools.com/TAgs/tag_figcaption.asp--> 
+    <section>
+        <h2>Team Analysis Process</h2>
+        <p>
+        Our team utilized <strong>axial coding</strong> and <strong>affinity diagramming</strong> 
+        to analyze our interview transcripts and build consensus for our requirement statements. 
+        The process involved six key steps:</p>
+        <ol>
+            <li>Initial Axial Coding</li>
+            <li>Affinity Diagramming</li>
+            <li>Creating a Codebook</li>
+            <li>Axial Coding with the Codebook</li>
+            <li>Consensus Building</li>
+            <li>Requirements Generation</li>
+        </ol>
+        <p>
+        Our affinity diagram categorizes the axial coding outcomes from the transcripts. We identified 
+        <em>phenomena</em>, <em>conditions</em>, <em>actions</em>, and <em>consequences</em> using blue 
+        sticky notes. These were connected to yellow sticky notes, which summarized team-generated short 
+        descriptors. Each yellow sticky note mapped to a section, color-coded based on the type of concept 
+        (phenomena, conditions, actions, or consequences), corresponding to axial codes from each team member.</p>
+        <p>
+        This process helped us develop a comprehensive codebook that refined our understanding of the data until we 
+        reached a consensus on our interviews. Ultimately, we generated nine requirement statements.
+        </p>
+        <p>
+        If you’d like to explore the affinity diagram with more detail, you can view it here: 
+        <a href="https://www.figma.com/board/MmStn5D4upkNxeDRG5cZjq/Affinity-Diagramming?node-id=0-1&t=qui64dYfp9EgHQPZ-1" target="_blank" rel="noopener">View Affinity Diagram on Figma</a>.
+        </p>
+        <figure>
+        <img src="affinity.png" alt="Image of the team's affinity diagram" />
+        <figcaption>Our Affinity Diagram showcasing categorized insights from axial coding based on interview transcripts.</figcaption>
+        </figure>
+    </section>
+    
+    
+    <!-- Requirement Statements Section & Description Section for Prototype 2-->
+     <!--https://www.w3schools.com/tags/tag_video.asp-->
+    <section>
+        <h2>Requirement Statements & Applications for Figma Prototype 2</h2>
+        <p>Below are the finalized requirement statements our team developed, along with explanation of how each will be applied in the prototype:<br>
+        <!-- Links to file and walkthrough -->
+        <a href="https://www.figma.com/design/Bt9CQ11pU1shiz3sOaLPXE/figma-prototype-2-carlseat?node-id=0-1&t=Y9hmfyfGJGJb2US6-1" target="_blank" aria-label="View Figma Prototype 2 design file">Click here to view the Figma Prototype 2 design file</a><br>
+        <a href="https://www.figma.com/proto/Bt9CQ11pU1shiz3sOaLPXE/figma-prototype-2-carlseat?node-id=1-3&p=f&t=mpCsL9rIQilk0Hry-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank" aria-label="View Figma Prototype 2 full prototype walkthrough">Click here to visit the Figma Prototype 2 walkthrough</a></p>
+
+    <ol>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to write and post detailed reviews for campus dining hall meals, provide feedback about the food, and their overall experience.</strong>
+                    <p><em>Application in Prototype 2: </em> The review page provides an option for rating dining hall food through multiple metrics. Such as providing text input, a star rating,   
+                        a photo, and a numerical slider tool. Users are also able to fill a feedback form when exploring the menu or the '+' feature for create.</p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Starting on Profile Page</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Review</li>
+                      <li>Changes page to Make Review Page</li>
+                      <li>Select Post</li>
+                      <li>Showcase Post dropdown options</li>
+                      <li>Select 'friends'</li>
+                      <li>Return to Profile</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Recipe</li>
+                      <li>Changes page to Make Recipe Page</li>
+                      <li>Select Post</li>
+                      <li>Showcase Post dropdown options</li>
+                      <li>Select 'friends'</li>
+                      <li>Return to Profile</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Feedback</li>
+                      <li>Showcase feedback form</li>
+                      <li>Hit submit</li>
+                      <li>Return to Profile Page</li>
+                      <li>Select Feed Page</li>
+                    </ol>         
+                </details>        
+                </div>
+                <!-- Video clip 1 -->
+                <video controls aria-label="Clip 1: Writing and posting a review" style="width: 300px; height: auto;">
+                    <source src="videos/clip1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to filter and/or tag dining hall meal options and reviews based on food allergies and dietary preferences (e.g., vegan, halal, gluten-free, nut, dairy, soy) to accommodate personal needs.</strong>
+                    <p><em>Application in Prototype 2: </em> When creating recipes and reviews, users are prompted to include tags of specific dietary needs with every post. 
+                        When viewing other posts on the feed, food tags by other users are also visible.</p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Starting on Feed Page</li>
+                      <li>Expand first (review) post</li>
+                      <li>Collapse review post</li>
+                      <li>Expand second (recipe) post</li>
+                      <li>Collapse recipe post</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Review</li>
+                      <li>Changes page to Make Review Page</li>
+                      <li>View food tags in blue highlighted text</li>
+                      <li>Go back to Feed Page with navigation menu</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Recipe</li>
+                      <li>Changes page to Make Recipe Page</li>
+                      <li>View food tags in blue highlighted text and ingredient list</li>
+                    </ol>          
+                </details>       
+                </div>
+                <!-- Video clip 2 -->
+                <video controls aria-label="Clip 2: Filtering and tagging food allergies" style="width: 300px; height: auto;">
+                    <source src="videos/clip2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to make reviews in three optional formats; images, predetermined slider or number system, or text input.</strong>
+                    <p><em>Application in Prototype 2: </em> On the review page, users are able to use multiple metrics such as sliders, a text input box, uploading an image, 
+                        and a 5-star numbering system.</p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Starting on Feed Page</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Review</li>
+                      <li>Changes page to Make Review Page</li>
+                      <li>View page features: camerca, text input, etc. </li>
+                      <li>Select Post</li>
+                      <li>Showcase Post dropdown options</li>
+                      <li>Select 'public'</li>
+                      <li>Returns to Feed Page</li>
+                      <li>Expand first (review) post</li>
+                      <li>View features of post</li>
+                    </ol>     
+                </details>            
+                </div>
+                <!-- Video clip 3 -->
+                <video controls aria-label="Clip 3: Creating a review with text and number system" style="width: 300px; height: auto;">
+                    <source src="videos/clip3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+    </ol>
+    <h3>Additional Requirements</h3>
+    <ul>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to post publicly, privately (just to friends), or anonymously.</strong>
+                    <p><em>Application in Prototype 2: </em> When hitting the post option for reviews or recipes, users are able to choose a friend post option, 
+                        anonymous post option, or public post option. </p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Starting on Feed Page</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Review option</li>
+                      <li>Changes page to Make Review Page</li>
+                      <li>Showcase Post dropdown options</li>
+                      <li>Select 'friends'</li>
+                      <li>Changes page to Profile Page</li>
+                      <li>Post is now in your saved items</li>
+                      <li>Select Create on the navigation menu</li>
+                      <li>Select Review option</li>
+                      <li>Changes page to Make Review Page</li>
+                      <li>Showcase Post dropdown options</li>
+                      <li>Select 'public'</li>
+                      <li>Returns to Feed Page</li>
+                      <li>Select Create on the navigation menu</li>
+                      <li>Select Review option</li>
+                      <li>Changes page to Make Review Page</li>
+                      <li>Showcase Post dropdown options</li>
+                      <li>Select 'anonymous'</li>
+                      <li>Returns to Feed Page</li>
+                    </details>
+                    </ol> 
+                </div>
+                <!-- Video clip 4 -->
+                <video controls aria-label="Clip 4: Choosing a post visibility option" style="width: 300px; height: auto;">
+                    <source src="videos/clip4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to share on the app regardless of meal plan, allowing off-board students or staff to contribute to meal ideas that others can try at home or in dining halls.</strong>
+                    <p><em>Application in Prototype 2: </em> All users (even guests) can view the app's features. Carleton students regardless of meal plan may post reviews or recipes, 
+                        allowing an inclusive feed. Meal plan is asked for when creating a post to provide other users context. </p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Starting on Login Page</li>
+                      <li>Select guest option</li>
+                      <li>Goes to Homepage</li>
+                      <li>Select Feed Page from the navigation menu</li>
+                      <li>Explore feed posts</li>
+                      <li>Expand first and second posts for meal types</li>
+                    </details>
+                    </ol> 
+                </div>
+                <!-- Video clip 5 -->
+                <video controls aria-label="Clip 5: Sharing content regardless of meal plan" style="width: 300px; height: auto;">
+                    <source src="videos/clip5.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to view aggregated ratings/reviews (outside of singular posts) from other users to help understand the general dining hall experience at various locations.</strong>
+                    <p><em>Application in Prototype 2: </em> When expanding the menu options, users can see the average star rating of the dining hall or cafe. Users are also able to see rating 
+                        details and location details. Users can also check for specified dining areas in the Feed Page for individual reviews. </p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Start on Menu Page</li>
+                      <li>View star rating selection</li>
+                      <li>Select Feed Page using navigation menu</li>
+                      <li>Explore feed posts for ratings</li>
+                      <li>Expand first and second posts for ratings</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Review option</li>
+                      <li>Changes page to Make Review Page</li>
+                      <li>Explore rating options provided</li>
+                    </details>
+                    </ol> 
+                </div>
+                <!-- Video clip 6 -->
+                <video controls aria-label="Clip 6: Viewing aggregated ratings and reviews" style="width: 300px; height: auto;">
+                    <source src="videos/clip6.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to navigate the app easily, with a user-friendly interface, where meal ratings, recipes, and food tags are clearly visible.</strong>
+                    <p><em>Application in Prototype 2: </em> The app follows the college color palette with a defined navigation menu on the bottom of the pages. Food tags all use 
+                        highlight blue coloring, meal ratings are visible on the feed and menu page, and recipes are created with the same steps as creating a review or 
+                        feedback form by clicking the create '+' button. </p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Starting at Login Page</li>
+                      <li>Select 'guest' option</li>
+                      <li>Changes to Homepage</li>
+                      <li>Select Menu Page from navigation menu</li>
+                      <li>Changes to Menu Page</li>
+                      <li>Select Feed Page from navigation menu</li>
+                      <li>Changes to Feed Page</li>
+                      <li>Select Create Page from navigation menu</li>
+                      <li>Opens 'create' button and dropdown options</li>
+                      <li>Select Profile Page from navigation menu</li>
+                      <li>Changes to Profile Page</li>
+                    </ol> 
+                </details>
+                </div>
+                <!-- Video clip 7 -->
+                <video controls aria-label="Clip 7: Navigating the user-friendly app interface" style="width: 300px; height: auto;">
+                    <source src="videos/clip7.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to submit feedback to administrators and/or Bon App about dining hall meals, such as suggestions of improvements, quality issues, or positive experiences.</strong>
+                    <p><em>Application in Prototype 2: </em> There is a feedback form from Bon App and administrators provided when exploring the menu or clicking the create page '+' button. 
+                        User feedback is then saved on to the Profile Page for users to refer back to.</p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Starting at Menu Page</li>
+                      <li>Select Feedback button </li>
+                      <li>Goes to Feedback Form</li>
+                      <li>Select Submit</li>
+                      <li>Changes to Profile Page</li>
+                      <li>Select 'Your Feedback Forms'</li>
+                      <li>Goes to Feedback Form</li>
+                      <li>Click the 'Create'/ '+' button</li>
+                      <li>Select Feedback button</li>
+                      <li>Goes to Feedback Form</li>
+                    </ol> 
+                </details>
+                </div>
+                <!-- Video clip 8 -->
+                <video controls aria-label="Clip 8: Submitting feedback to administrators" style="width: 300px; height: auto;">
+                    <source src="videos/clip8.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Users shall be able to save content posted by others.</strong>
+                    <p><em>Application in Prototype 2: </em> Users are able to save posted content by expanding the caret icon, which opens the fully 
+                        visible post. A heart icon at the bottom right corner allows users to save the post (whether review or recipe) to their Profile Page. </p>
+                    <details>
+                        <summary>Video Workflow</summary>
+                    <ol>
+                      <li>Starting at Feed Page</li>
+                      <li>Expand the first (review) post</li>
+                      <li>Select the heart icon</li>
+                      <li>Changes to Profile Page</li>
+                      <li>Post is now saved to 'Liked Reviews'</li>
+                      <li>Select Feed Page from navigation menu</li>
+                      <li>Expand the second (recipe) post</li>
+                      <li>Select the heart icon</li>
+                      <li>Changes to Profile Page</li>
+                      <li>Post is now saved to 'Liked Recipes'</li>
+                    </ol>    
+                </details>             
+                </div>
+                <!-- Video clip 9 -->
+                <video controls aria-label="Clip 9: Saving content posted by others" style="width: 300px; height: auto;">
+                    <source src="videos/clip9.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+    </ul>
+</section>
+
+    <!-- Figma Prototype 2 -->
+    <section>
+        <h2>Mid-Fidelity Figma Prototype 2</h2>
+        <p>Below are screenshots of my mid-fidelity prototype, showing the main interface and essential features:</p>
+
+        <div class="content-wrapper">
+            <div>
+                <img src="fig2/log.png"
+                    alt="Screenshot of CarlsEat prototype 2 Login or Guest Page">
+                <p><strong>Login or Guest Page:</strong> Login screen with username and password fields or a guest
+                    option.</p>
+            </div>
+            <div>
+                <img src="fig2/home.png"
+                    alt="Screenshot of CarlsEat prototype 2 Homepage">
+                <p><strong>Homepage:</strong> Welcoming homepage with a navigation menu and search bar.
+                    Including the renaming of the Review Page to now Feed.</p>
+            </div>
+            <div>
+                <img src="fig2/profile.png"
+                    alt="Screenshot of CarlsEat prototype 2 Profile Page">
+                <p><strong>Profile:</strong> A redesigned Profile page showing user details and potential saved 
+                    recipes, reviews, and feedback forms.</p>
+            </div>
+            <div>
+                <img src="fig2/feed.png"
+                    alt="Screenshot of CarlsEat prototype 2 Feed Page">
+                <p><strong>Feed:</strong> An interactive feed for users to share recipes, reviews, like posts, and add
+                    friends.</p>
+            </div>
+            <div>
+                <img src="fig2/expanded_review_feed.png"
+                    alt="Screenshot of CarlsEat prototype 2 Expanded Review Example">
+                <p><strong>Expanded Review Example:</strong> An example of expanding a review from the Feed page. Users
+                    can see see the star rating of the meal, metrics of numerical ratings, highlighted food tags, a user's text 
+                    describing the meal, and a heart icon to like the post.</p>
+            </div>
+            <div>
+                <img src="fig2/expanded_recipe_feed.png"
+                    alt="Screenshot of CarlsEat prototype 2 Expanded Recipe Example">
+                    <p><strong>Expanded Recipe Example:</strong> An example of expanding a recipe post from the Feed page. Users
+                        can see see the star rating of the meal, highlighted food tags, text describing the recipe making process, 
+                        and a heart icon to like the post.</p>
+            </div>
+            <div>
+                <img src="fig2/create_on_feed.png"
+                    alt="Screenshot of CarlsEat prototype 2 Feed Page's Create Button">
+                <p><strong>Create Button:</strong> When the create button in the upper right corner is pressed, the background
+                        blurs while the icon turns blue. Three dropdown buttons are shown; Review, Recipe, and Feedback.</p>
+            </div>
+            <div>
+                <img src="fig2/feed_buttons.png"
+                alt="Screenshot of CarlsEat prototype 2 Feed Page's Create Button - Review Option">
+                <p><strong>Create Review Button:</strong> When users click the Review button, the option changes color to white showing it
+                    has been selected before transporting to a page for making a review.</p>
+            </div>
+            <div>
+                <img src="fig2/create_recipe_feed.png"
+                alt="Screenshot of CarlsEat prototype 2 Feed Page's Create Button - Recipe Option">
+                <p><strong>Create Recipe Button:</strong> When users click the Recipe button, the option changes color to white showing it
+                    has been selected before transporting to a page for making a recipe.</p>
+            </div>
+            <div>
+                <img src="fig2/make_review.png"
+                    alt="Screenshot of CarlsEat prototype 2 Create Review Page">
+                <p><strong>Create Review Page:</strong> Users who have selected the Review button will see a their profile picture and name in a text 
+                    box prompting for a subject name, location details (exampele: was the meal at a dining hall or elsewhere), and their meal plan type. There is then 
+                    a slider scale of 1 to 10 for three metrics to rate the meal. There is a food hashtag section showing examples with blue highlighted 
+                    text. And then a user input box to insert any more details if wanted and a star rating choice. There is a post button
+                    and a camera icon to take a photo of the meal.</p>
+            </div>
+            <div>
+                <img src="fig2/review_post_button.png"
+                    alt="Screenshot of CarlsEat prototype 2 Create Review Post Button">
+                <p><strong>Create Review Post Button:</strong> When the Post button is selected users are shown the dropwdown buttons; friends, public, and 
+                    anonymous. Public sends the review to the Feed Page. Anonymous sends the review to the Feed Page without public username details. Friends changes the 
+                    vsibiity of the review to the friends the user has added. </p>
+            </div>
+            <div>
+                <img src="fig2/make_recipe.png"
+                    alt="Screenshot of CarlsEat prototype 2 Create Recipe Page">
+                <p><strong>Create Recipe Page</strong>  Users who have selected the Recipe button will see a their profile picture and name in a text 
+                    box prompting for a subject name, location details (example: was the meal made on a campus kitchen, home, or elsewhere), and their meal plan type. 
+                    There is a post button and a camera icon to take a photo of the meal. There is a food hashtag section showing examples with
+                    blue highlighted text. There is an ingrediants section under the food tags so users can view an ingrediants list. Lastly, the user input text 
+                    section for the user to detail how to create the recipe.               
+                </p>
+            </div>
+            <div>
+                <img src="fig2/recipe_post_button.png"
+                    alt="Screenshot of CarlsEat prototype 2 Create Recipe Post Button">
+                <p><strong>Create Recipe Post Button:</strong> When the Post button is selected users are shown the dropwdown buttons; friends, public, and 
+                    anonymous. Public sends the recipe to the Feed Page. Anonymous sends the review to the Feed Page without public username details. Friends changes the 
+                    vsibiity of the recipe to the friends the user has added.</p>
+            </div>
+            <div>
+                <img src="fig2/menu.png"
+                    alt="Screenshot of the CarlsEat prototype 2 Menu Page">
+                <p><strong>Menu Page</strong> Menu screen showing all campus dining areas each with a collapsible 
+                    caret icon. Star ratings accumalted from reviews are avaiable, as well as more details of the dining hall. 
+                    There is a menu button to see the chosen dining hall's menu, a button to see other reviews of the selected dining hall,  
+                    and a feedback button to view the feedback form.</p>
+            </div>
+            <div>
+                <img src="fig2/feedback.png"
+                    alt="Screenshot of the CarlsEat prototype 2 Feedback Form">
+                <p><strong>Feedback Form</strong> A new feedback form, so users can contact admin or Bon App staff about concerns ranging 
+                    from cross-contamination issues, recommendations, or any general feedback</p>
+            </div>
+            <p>Icons are sourced from the Figma Library and FigJam tutorial. Imagery of
+                    Carleton's campus photo and logo are not owned by me. ฅ՞•ﻌ•՞ฅ </p>
+        </div>
+    </section>
+
+    <!-- Figma Prototype 1-->
+    <section>
+        <h2>Low-Fidelity Figma Prototype 1</h2>
         <p>Below are screenshots of my low-fidelity prototype, showing the main interface and essential features:</p>
 
         <div class="content-wrapper">
@@ -219,14 +722,14 @@
                     alt="Screenshot of the CarlsEat prototype showing the menu options from campus dining areas with a review and menu button">
                 <p><strong>Dining</strong> Menu screen showing all campus dining areas with a review and menu button</p>
             </div>
-            <p>Credits of icons are sourced from the Figma Library [Hayfi Studio] and FigJam tutorial. Imagery of
+            <p>Icons are sourced from the Figma Library and FigJam tutorial. Imagery of
                 Carleton's campus photo and logo are not owned by me. ฅ՞•ﻌ•՞ฅ </p>
         </div>
     </section>
 
     <!-- User Needs & Concerns Section: Requirements Elicitation-->
     <section>
-        <h2>How the Prototype Addresses User Needs</h2>
+        <h2>How the Prototype Addresses User Needs for Figma Prototype 1</h2>
         <p>
             Based on our user research and the elicitation process, which included focus groups and interviews with
             Carleton students, this prototype offers an intuitive platform for sharing dining experiences. Students will

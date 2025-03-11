@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Coding & Generative AI Class Projects</title>
+    <style>
+        body {
+            background-color: #fff; /* White background for a clean look */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Dark grey text for readability */
+            overflow-x: hidden;
+            transform-origin: center;
+        }
+        header {
+            background-color: #000; /* Black background for header */
+            color: #fff; /* White text */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #000; /* Black background for navigation */
+            position: sticky;
+            color: #fff; /* White text */
+            -webkit-text-fill-color: #fff;
+            top: 0;
+            padding: 10px;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff; /* White text for navigation links */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #FF0077; /* Magenta color on hover */
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .intro {
+            background-color: #fff; /* White background for intro */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333; /* Dark grey text for h2 */
+        }
+        .projects {
+            display: block;
+            margin-top: 20px;
+        }
+        .project {
+            background-color: #fff; /* White background for each project */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+            overflow: hidden;
+        }
+        .project:hover {
+            transform: scale(1.05); /* Slight scaling effect on hover */
+        }
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .project h3 {
+            margin-top: 15px;
+            color: #444; /* Dark grey text for project title */
+        }
+        .project p {
+            font-size: 14px;
+            color: #666; /* Light grey text for description */
+        }
+        .project-details {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        /* Resize iframe to be smaller */
+        .project iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+            margin: 0 auto;
+            display: block;
+            transform-origin: center;
+        }
+
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Back to Top Button */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #000; /* Black background for button */
+            color: #fff; /* White text */
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #backToTop:hover {
+            background-color: #FF0077; /* Magenta color on hover */
+        }
+
+        /* Specific link styles */
+        a, a:visited {
+            color: #000; /* Black text for links */
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover, a:focus, a:active {
+            color: #FF0077; /* Magenta color on hover/focus */
+            outline: 0;
+        }
+        .intro p, .projects p, .project p {
+            font-size: 1.2rem;
+            color: #666; /* Light grey text */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Creative Coding & Generative AI Projects</h1>
+    <p>Explore my projects in creative coding and generative AI! Below you'll find three projects I worked on during the course.</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="#project1" onclick="toggleDetails(1)">ML5.js: Interactive Webcam</a>
+    <a href="#project2" onclick="toggleDetails(2)">P5.js: Interactive Cat Room Game</a>
+    <a href="#project3" onclick="toggleDetails(3)">Bluesky Bot: Generative AI</a>
+    <a href="javascript:void(0);" onclick="scrollToTop()">Back to Top</a>
+</nav>
+
+<div class="container">
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h2>Welcome to My Creative Coding and Generative AI Class Projects</h2>
+        <p>This class was an exploration of combining creativity with machine learning and generative algorithms. I worked on a variety of projects that involved building interactive and generative systems using code and AI technologies. Below are three projects that showcase my journey and the skills I developed throughout the course.</p>
+        <p><strong>Course Description:</strong><br>
+        Generative AI tools such as ChatGPT and GitHub CoPilot are fundamentally reshaping programming practices and workflows, raising questions about the future of code and so-called “prompt engineering,” or writing for the machine. This class will situate this moment of potential transformation in the history of literate programming and “natural language” coding using Inform 7, as well as current tools such as ml5.js, an accessible machine learning library. Students will engage this history and future of computational creativity through writing and re-writing code, both with and without generative AI interventions, for conversational bots, interactive fiction, and experimental games.<br><br>
+        The course is divided into three modules: Writing as Code; Code as Text; and Creative Code. Throughout, we will work together on weekly shorter creative coding exercises and build towards three more complicated projects: a parser-based interactive fiction; a text generator; and a portfolio of interactive art.<br><br>
+        All of the projects I created incorporated the use of AI, in line with the course's focus on understanding AI tools. However, the main objective was to explore how creative spins can be added through the combination of AI and human imagination. We also made a conscious effort to distinguish between AI-generated work and our own, developing a better sense of AI’s capabilities and forming opinions on the ethics of AI usage through readings, lectures, and practice.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <div class="projects">
+        <!-- Project 1: ML5.js - Webcam Interactive Art -->
+        <div id="project1" class="project" onclick="toggleDetails(1)">
+            <img src="abs.jpg" width="50" height="200" alt="Project 1 Preview">
+            <h3>Project 1: ML5.js: Interactive Webcam</h3>
+            <p>Click to learn more and view the full project!</p>
+            <div class="project-details" id="project1-details">
+                <p><a href="https://openprocessing.org/sketch/2566046/embed" target="_blank">View the OpenProcessing sketch</a></p>
+                <iframe src="https://openprocessing.org/sketch/2566046/embed" frameborder="0" allowfullscreen></iframe>
+                <p><strong>Assignment Instructions:</strong></p>
+                <p><strong>Creative Code with ML5</strong><br>This week, we’ll be working from our experiments with Teachable Machine and ml5 to build an original web implementation of a responsive interface. This should be a creative project and doesn’t need to have any “purpose” beyond an aesthetic response to webcam input.</p>
+                <p>Your experience can either use a custom model trained on your own webcam input, as in the Rock Paper Scissors demo, or it can make use of an existing web-optimized model. The piece should either work from user tracking (if using the capacities of face and hand recognition) or distinguish between at least two types of input with a different response.</p>
+                <p>In class, we’ll work through these examples and learn from their approaches:</p>
+                <ul>
+                    <li>Kinetic Type and FaceMesh</li>
+                    <li>Falling Coins</li>
+                    <li>Interactive Fridge Magnets</li>
+                </ul>
+                <p>I recommend the ml5.js Coding Train Videos for additional references on the current capabilities of the library.</p>
+                <p>Submit either an OpenProcessing / P5.js link or a GitHub Pages deployment of your experiment.</p>
+                <p><strong>Workflow:</strong> Using Teachable Machine and Ml5, I created a web interface that would use input from a users camera to create unique affects based on the Teachable Machine model. 
+                This assignment used both AI in creation of the affects. The model was created with Teachable Machine. The model is trained to recognize three hand symbols and/or poses, and show their accuracy with varying effcts. The choice of the training 
+            model was based on jokes my friends and I tend to make. The Teachable Machine model was also very sensative and difficult to train since the model was only based on myself, without varying subjects.  </p>
+                <p><strong>Sources:</strong> Teachable Machine, Ml5.js documentation and library, OpenProcessing, OpenAI </p>
+            </div>
+        </div>
+
+        <!-- Project 2: P5.js - Interactive Cat Room Game -->
+        <div id="project2" class="project" onclick="toggleDetails(2)">
+            <img src="cats.png" width="50" height="200" alt="P5.js Interactive Cat Room Game">
+            <h3>Project 2: P5.js: Interactive Cat Room Game</h3>
+            <p>Click to learn more and view the full project!</p>
+            <div class="project-details" id="project2-details">
+                <p><a href="https://zubeydas.github.io/P5/P5.html" target="_blank">View the Interactive Cat Game</a></p>
+                <iframe src="https://zubeydas.github.io/P5/P5.html" title="Interactive Cat Room Game"></iframe>
+                <p><strong>Assignment Instructions:</strong></p>
+                <p><strong>Exercise: P5 Game</strong><br>Using a familiar genre as a starting point, build out a complete, one room / one level, game in P5.js. I’ve built out an extensive example of this week’s approach in AI Admin. Notice how this work becomes a metagame considering the potential role of generative AI tools in shaping interactive experiences for education and training. It’s also built on very simple conditionals. The game’s primary logic can all be described under the framework of “if / else” - players are given simple scenarios and a choice of answers, and each answer in turn changes the player’s reputation on leading AI policy for their department.</p>
+                <p><strong>Building for Interaction</strong><br>Here’s an overview of the steps / prompts involved - however, you’ll need to adjust these to your goals. Decide when to program directly, and when using generative AI tools to build or debug will be most useful.</p>
+                <ul>
+                    <li>Set Up the Canvas</li>
+                    <li>Load a Background Image</li>
+                    <li>Display Mouse Coordinates</li>
+                    <li>Define Mouseover Zones Using Coordinates</li>
+                    <li>Make Zones Clickable and Display Messages</li>
+                    <li>Build Interactions</li>
+                    <li>End the Game After All Interactions</li>
+                </ul>
+                <p>Submit the link to your live, GitHub Pages or Open Processing version of the game on Moodle.</p>
+                <p><strong>Workflow:</strong><br>This game was created because I found a cute image online of a cat in a cozy room, and I wanted to build a game that captured that same comforting vibe. The image inspired me to create a simple, interactive game based on the cozy atmosphere of the cat in bed. I thought it would be fun to design a game that uses familiar "iSpy" elements, as I enjoyed those books as a kid. The objective is for the player to find hidden items within the room while interacting with the environment in a way that feels natural and cozy.</p>
+        
+                <p>Building on the concepts from my professor's demo and using the P5.js library, I wanted to make the game visually appealing with cute elements and simple mechanics. The user can click on various objects within the cat’s room, and each interaction reveals something new, whether it's a playful response or an item the player needs to find.</p>
+                
+                <p>I focused on making the game easy to play with simple instructions, while still offering enough engagement to capture the fun elements of a point-and-click game. Additionally, I designed the game with aesthetics in mind, ensuring the visuals were cute and cozy, matching the theme of the cat in bed.</p>
+                <p><strong>Sources:</strong> P5.js documentation and library, OpenAI, and my professor's example <a href="https://anastasiasalter.net/AIAdmin/">Ai Admin</a></p>
+            </div>
+        </div>
+
+        <!-- Project 3: Bluesky Bot -->
+        <div id="project3" class="project" onclick="toggleDetails(3)">
+            <img src="sky.jpg" width="50" height="200" alt="Bluesky Bot Preview">
+            <h3>Project 3: Bluesky Bot</h3>
+            <p>Click to learn more and view the full project!</p>
+            <div class="project-details" id="project3-details">
+                <p><a href="https://bluebotsdonequick.com/bots/anxietybot.bsky.social" target="_blank">View the Bluesky Bot</a></p>
+                <iframe src="https://bluebotsdonequick.com/bots/anxietybot.bsky.social" title="The Bluesky Bot"></iframe>
+                <p><strong>Assignment Instructions:</strong></p>
+                <p><strong>Bluesky Bot</strong><br>In this assignment, you’ll use BlueBotsDoneQuick and Tracery to design an original generative grammar for both text and images, tailored to post on a Bluesky account. Use the sample code and deployed bot sample as a guide, and play with abstractions and combinatorial poetics.</p>
+                <p>As you work, try using generative AI tools to:</p>
+                <ul>
+                    <li>Develop the structure of your SVG. Iterate through this process without mentioning Tracery to focus on creating a representation of the abstraction, landscape, etc you want to generate.</li>
+                    <li>Generate possibilities for each element of your grammar. Generate as JSON, and use prompts like web-safe color names, values within a range, etc, to speed up your Tracery grammar crafting process.</li>
+                    <li>Develop your initial Tracery grammar. Make sure to check that the grammar ties the output to the origin so that it will work in the Bluesky pot structure.</li>
+                </ul>
+                <p>Make sure to select “display source” when deploying your bot, and set your bot to post every twelve hours. Submit the link to your bot’s hosted source code as per the class example to the Moodle for credit for this exercise.</p>                <p><strong>Workflow:</strong> In this assignment, I used <a href="https://bluebotsdonequick.com/">BlueBotsDoneQuick </a> and <a href="https://tracery.io/">Tracery</a>, as well as a <a href="https://bluebotsdonequick.com/bots/blueskiesbot.bsky.social"> class demo </a> from the professor to design a generative grammar for both text and images, tailored to post on a Bluesky account. 
+                    The bot combines generative AI tools with creative grammar structures to generate unique content. 
+                    I iterated through various stages, developing SVG representations and experimenting with color ranges and scenery to display changing text and imagery of both a cat and poetry akin to day to day concerns of anxiety and imposter syndrome.</p>
+                <p><strong>Sources:</strong> Tracery, class demo resource, BlueBotsDoneQuick, OpenAI</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()">↑</button>
+
+<script>
+    // JavaScript function to toggle the project details
+    function toggleDetails(projectNumber) {
+        var details = document.getElementById('project' + projectNumber + '-details');
+        var allDetails = document.querySelectorAll('.project-details');
+        allDetails.forEach(function(detail) {
+            if (detail !== details) {
+                detail.style.display = "none";
+                detail.style.height = "0";
+            }
+        });
+
+        if (details.style.display === "block") {
+            details.style.display = "none";
+            details.style.height = "0";
+        } else {
+            details.style.display = "block";
+            details.style.height = "auto";
+        }
+    }
+
+    // JavaScript function to show the Back to Top button when scrolling
+    window.onscroll = function() {
+        var backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+</body>
+</html>

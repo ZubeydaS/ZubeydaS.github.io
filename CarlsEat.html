@@ -2,188 +2,81 @@
 <html lang="en">
 
 <head>
-    
-    <!--- basic page needs       
-   ================================================== -->
-    <meta charset="utf-8">
-    <title>CarlsEat Prototype: Carleton Food Rating & Sharing</title>
-    <meta name="description" content="Human Computer Interaction Project: CarlsEat.">
-    <meta name="author" content="ZubeydaS">
 
-    <!-- mobile specific metas
+	<!--- basic page needs
    ================================================== -->
+   <meta charset="utf-8">
+   <title>Personal Website</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+    <!-- Mobile specific metas ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- CSS
-   ================================================== -->
+    <!-- CSS ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
 
-    <!-- General Style (Adapted from parts of main.css)
+   <!-- favicons
    ================================================== -->
-    <style>
-        body {
-            font-family: 'Lora', serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        h1 {
-            font-family: 'Lora', serif;
-            background-color: #000000;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            margin: 0;
-        }
-
-        h2 {
-            font-family: 'Lora', serif;
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #FF0077;
-            padding-bottom: 5px;
-        }
-
-        a {
-            color: #FF0077;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Section Layout Adjustments */
-        section {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        .content-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 30px;
-        }
-
-        .content-wrapper>div {
-            flex: 1;
-            min-width: 280px;
-        }
-
-        .content-wrapper img {
-            width: 100%;
-            max-width: 100%;
-            border-radius: 8px;
-            margin-top: 20px;
-        }
-
-        /* Button Section */
-
-        .button-section {
-            text-align: center;
-        }
-
-        .button-section .button {
-            background-color: #FF0077;
-            color: white;
-            padding: 5px 20px;
-            font-size: 15px;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .button-section .button:hover {
-            background-color: #D4006B;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Media Queries & Adjusting*/
-        @media only screen and (max-width: 768px) {
-            section {
-                padding: 15px;
-                margin: 20px;
-            }
-
-            h1 {
-                font-size: 24px;
-                padding: 15px 0;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            .button-section .button {
-                width: 100%;
-                padding: 15px;
-                font-size: 16px;
-            }
-        }
-
-        /* Style for the summary element in details */
-        /* https://www.w3schools.com/TAGs/tag_summary.asp */
-        details summary {
-            font-weight: bold;
-            cursor: pointer;
-            padding: 10px;
-            background-color: #f8f8f8;
-            color: #333;
-            border: 2px solid #333;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-        }
-
-        details summary:hover {
-            text-decoration: underline;
-            color: #FF0077;
-            border-color: #FF0077; 
-        }
-        
-        details[open] summary {
-            background-color: #FF0077;
-            color: white;
-            border-color: #FF0077;
-        }
-
-        details ol {
-            padding-left: 50px;
-            list-style-type: circle;
-            font-size: 1.4rem;
-        }
-
-    </style>
+   <link rel="icon" type="image/png" href="newfavicon.png">
 
 </head>
 
 <body>
+<!-- Navigation Bar -->
+<nav>
+        <h1>CarlsEat</h1> 
+        <div class="food-images-left">
+            <img src="header_photos/pizza.png" alt="pizza png">
+            <img src="header_photos/soda.png" alt="soda png">
+            <img src="header_photos/milk.png" alt="milk png">
+        </div>
+        <div class="food-images-right">
+            <img src="header_photos/burger.png" alt="burger png">
+            <img src="header_photos/roll.png" alt="cinnamon_roll png">
+            <img src="header_photos/sandwich.png" alt="sandwich png">
+        </div>
+    <h4> Figma Designs for a Food Rating & Sharing Application at Carleton College</h4>    
+    <ul>
+        <!-- Dropdown for Prototype 1 -->
+        <li class="dropdown">
+            <span class="dropbtn">Prototype 1 Process</span> 
+            <div class="dropdown-content">
+                <a href="#about">About the Project</a>
+                <a href="#user_needs-1">User Needs</a>
+                <a href="#prototype-1">Low-Fidelity Figma Design</a>
+            </div>
+        </li>
 
-    <h1>CarlsEat Prototype: Carleton Food Rating & Sharing</h1>
+        <!-- Dropdown for Prototype 2 -->
+        <li class="dropdown">
+            <span class="dropbtn">Prototype 2 Process</span> 
+            <div class="dropdown-content">
+                <a href="#ux_research_overview">Team UX Research Overview</a>
+                <a href="#ux_research_analysis">Analysis for Requirements Elicitation Protocols</a>
+                <a href="#requirement_statements">Requirement Statements & Applications</a>
+                <a href="#prototype-2">Mid-Fidelity Figma Design</a>
+            </div>
+        </li>
+
+        <!-- Dropdown for Prototype 3 -->
+        <li class="dropdown">
+            <span class="dropbtn">Prototype 3 Process</span> 
+            <div class="dropdown-content">
+                <a href="#ux_overview_statistics">UX Evaluation Overview & Statistics</a>
+                <a href="#ux_feedback_improvements">UX Evaluation Feedback & Improvements</a>
+                <a href="#future_steps">Future Steps</a>
+                <a href="#prototype-3">High-Fidelity Figma Design</a>
+            </div>
+        </li>
+    </ul>
+</nav>
 
     <!-- Combined Team Members and Project Overview Section -->
-    <section>
+    <section id="about">
         <h2>About the Project</h2>
         <div class="content-wrapper">
             <div>
@@ -192,7 +85,7 @@
                     <li>Chloe Simanek</li>
                     <li>Ekow Brandon Anderson</li>
                     <li>Scott Gevurts</li>
-                    <li>Me ฅ՞•ﻌ•՞ฅ</li>
+                    <li>Zubeyda Shute ฅ՞•ﻌ•՞ฅ</li>
                 </ul>
             </div>
             <div>
@@ -214,102 +107,207 @@
     </section>
 
         <!-- UX Evaluation Overview, Tasks, and Metrics -->
-    <section>
-        <h2>UX Evaluation</h2>
+    <section id="ux_overview_statistics">
+        <h2>UX Evaluation Overview & Statistics</h2>
+        <h3>Process</h3>
         <p>
-            Our team conducted a combination of <strong>semi-structured interviews</strong> and <strong>focus groups</strong> to gather user insights. The research process included:
+            Our team conducted <strong>focus groups</strong> to gather user insights. The research process included:
             </p>
             <ul>
-                <li>2 one-on-one semi-structured interviews.</li>
-                <li>3 participatory design interviews utilizing focus groups.</li>
-                <li>A total of 8 participants contributed feedback, resulting in 5 interviews conducted by team members overall.</li>
+                <li>2 participants per focus group.</li>
+                <li>4 total interviews utilizing focus groups.</li>
+                <li>A total of 8 participants contributed feedback & task completion, resulting in the measured informal UX metric averages and standard deviation statistics below.</li>
             </ul>
+
+            <div class="content-wrapper">
+                <div>
+                    <h3>Tasks</h3>
+                    <p>Below are the scenarios participants were told to imagine before announcing their tasks. Each task corresponds with one metric for the interviewer to measure.</p>
+                    <ul id="task-list">
+                        <li><span class="caret">Task 1: "You wanted to know someone’s opinion about the current dining hall food. How would you see that and interact with their opinions?"</span>
+                            <ul class="nested">
+                                <li>Explanation: This task aims to evaluate how users engage with food reviews from others.</li>
+                            </ul>
+                        </li>
+                        <li><span class="caret">Task 2: "You noticed a post that coincides with your food preferences. Using the figma app prototype, how would you like the post?"</span>
+                            <ul class="nested">
+                                <li>Explanation: This task tests the user’s ability to interact with content (like saving and liking posts).</li>
+                            </ul>
+                        </li>
+                        <li><span class="caret">Task 3: "You just had a good meal at the LDC, and you want to share your experience with other students. How would you create a post?"</span>
+                            <ul class="nested">
+                                <li>Explanation: This task evaluates users’ ability to create a review or post and success of navigating the prototype.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div>
+                    <h3>Informal UX Metrics</h3>
+                    <p>Below are the metrics that will be measured while participants complete each task</p>
+                    <ul id="metrics-list">
+                        <li><span class="caret">Metric for Task 1: Average number of clarifying <strong>questions</strong> asked by users during task execution</span>
+                            <ul class="nested">
+                                <li>Collection Method: Tallying the occurrences (on paper or device) while the user is completing the task.</li>
+                            </ul>
+                        </li>
+                        <li><span class="caret">Metric for Task 2: Number of <strong>errors</strong> (wrong clicks or misused elements). Eessentially, unintended behavior.</span>
+                            <ul class="nested">
+                                <li>Collection Method: Tallying the occurrences (on paper or device) while the user is completing the task.</li>
+                            </ul>
+                        </li>
+                        <li><span class="caret">Metric for Task 3: <strong>Time</strong> taken to hypothetically capture, create, and post an image of food with a prototype</span>
+                            <ul class="nested">
+                                <li>Collection Method: Use timer on a separate device and start timing when the user begins navigation and stop once the user shortly explains their last clicked item.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <script>
+                /* SOURCE: https://www.w3schools.com/howto/howto_js_treeview.asp */
+                var toggler = document.getElementsByClassName("caret");
+                var i;
+            
+                for (i = 0; i < toggler.length; i++) {
+                    toggler[i].addEventListener("click", function() {
+                        this.parentElement.querySelector(".nested").classList.toggle("active");
+                        this.classList.toggle("caret-down");
+                    });
+                }
+            </script>
+
         <div class="content-wrapper">
             <div>
-                <h3>Tasks</h3>
+                <h3>Team Informal UX Metrics Statistics</h3>
+                <p>Below are both the averages and standard deviation accross the team's 4 focus groups. The first number is the average, and the second is the standard deviation.</p>
                 <ul>
-                    <li>Chloe Simanek</li>
-                    <li>Ekow Brandon Anderson</li>
-                    <li>Scott Gevurts</li>
-                    <li>ฅ՞•ﻌ•՞ฅ</li>
+                    <li>Task 1 - Questions: 0.5 / person (SD: 0.5)</li>
+                    <li>Task 2 - Errors: 0.875 / person (SD: 1.094)</li>
+                    <li>Task 3 - Time: 33.1 secs / person (SD:6.943 )</li>
                 </ul>
             </div>
             <div>
-                <h3>Informal UX Metrics</h3>
+                <h3>Individual Informal UX Metrics Statistics</h3>
+                <p>Below are my indivudal focus group's results. *Be aware both participants completed all three tasks together, resulting in one statistic for each metric</p>
                 <ul>
-                    <li>Chloe Simanek</li>
-                    <li>Ekow Brandon Anderson</li>
-                    <li>Scott Gevurts</li>
-                    <li>ฅ՞•ﻌ•՞ฅ</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Team Averages</h3>
-                <ul>
-                    <li>Chloe Simanek</li>
-                    <li>Ekow Brandon Anderson</li>
-                    <li>Scott Gevurts</li>
-                    <li>ฅ՞•ﻌ•՞ฅ</li>
+                    <li>Task 1 - Questions: 0 / person </li>
+                    <li>Task 2 - Errors: 5 / person </li>
+                    <li>Task 3 - Time: 45 secs / person </li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- Results from UX Evaluation: Quotes, & High Fidelity Improvements w/ Hyperlinks -->
-     <!--https://www.w3schools.com/tags/tag_video.asp-->
-     <section>
-        <h2>Results from UX Evaluation & Applications for Figma Prototype 3</h2>
-        <p>Below are the finalized requirement statements our team developed, along with explanation of how each will be applied in the prototype:<br>
-        <!-- Links to file and walkthrough -->
-        <a href="https://www.figma.com/design/Bt9CQ11pU1shiz3sOaLPXE/figma-prototype-2-carlseat?node-id=0-1&t=Y9hmfyfGJGJb2US6-1" target="_blank" aria-label="View Figma Prototype 2 design file">Click here to view the Figma Prototype 3 design file</a><br>
-        <a href="https://www.figma.com/proto/Bt9CQ11pU1shiz3sOaLPXE/figma-prototype-2-carlseat?node-id=1-3&p=f&t=mpCsL9rIQilk0Hry-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank" aria-label="View Figma Prototype 2 full prototype walkthrough">Click here to visit the Figma Prototype 3 walkthrough</a></p>
-
+    <!--SOURCE: https://www.w3schools.com/tags/tag_video.asp-->
+    <section id="ux_feedback_improvements">
+        <h2>Results from UX Evaluation: Feedback & Improvements</h2>
     <ol>
         <li>
             <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
                 <div style="flex: 1; margin-right: 20px;">
-                    <strong>Users shall be able to write and post detailed reviews for campus dining hall meals, provide feedback about the food, and their overall experience.</strong>
-                    <p><em>Application in Prototype 2: </em> The review page provides an option for rating dining hall food through multiple metrics. Such as providing text input, a star rating,   
-                        a photo, and a numerical slider tool. Users are also able to fill a feedback form when exploring the menu or the '+' feature for create.</p>
+                    <strong>Participants strongly suggested the ability to comment on posts.</strong>
+                    <p></br><strong>Overview: </strong> When completing the assigned tasks, participants expected to find a comment section or higher interactable social features within 
+                           the prototype. A participant also added, the engagement of students commenting on subjects like, varying cultural meals that are routinely made at the dining halls, would create interesting 
+                           social engagement from students who are able to rate the accuracy of the foods from their own culture.</p>
+                    <p><strong>Improvements: </strong> The prototype can now create comment threads under posts. Through navigating the caret buttons, the video displays checking 
+                    a potential thread of users from a recipe review through the feed page and into new elements for the high-fidelity stage. The comment section allows for a social user interface, and 
+                    allowed for the creation of a more interactive feed page.</p>
                         <blockquote>
-                            “I think it would be cool to see what other people are making, and I might get ideas from that.”
-                            </blockquote>       
+                            There could be comments under there.”
+                        </blockquote>   
+                        <blockquote>
+                            I would like to comment, have it become like a Twitter thread."    
+                        </blockquote>  
+                        <blockquote>
+                        ... about cultural food where it's like, did it pass? Did it pass this culture and a person [from said culture] will respond  'yeah' or 'actually it didn’t.'"
+                        </blockquote>  
                 </div>
                 <!-- Video clip 1 -->
-                <video controls aria-label="Clip 1: Writing and posting a review" style="width: 300px; height: auto;">
-                    <source src="videos/clip1.mp4" type="video/mp4">
+                <video controls aria-label="Clip 1: Commenting on posts." style="width: 300px; height: auto;">
+                    <source src="fig3/new_comments.mp4" type="video/mp4">
                 </video>
             </div>
         </li>
         <li>
             <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
                 <div style="flex: 1; margin-right: 20px;">
-                    <strong>Users shall be able to filter and/or tag dining hall meal options and reviews based on food allergies and dietary preferences (e.g., vegan, halal, gluten-free, nut, dairy, soy) to accommodate personal needs.</strong>
-                    <p><em>Application in Prototype 2: </em> When creating recipes and reviews, users are prompted to include tags of specific dietary needs with every post. 
-                        When viewing other posts on the feed, food tags by other users are also visible.</p>
+                    <strong>Participants found difficulties with clicking certain button elements which affected intuitiveness of the prototypes deisgn .</strong>
+                    <p></br><strong>Overview: </strong>The partcipants found that the caret icon used to collapse and expand various posts in the protype was quite small. As well as finding some placements such as the 
+                        'like' element was hard to intuitively spot. Resulting in higher errors for the Informal UX metrics. The perception that the button was not assessable at the mid-fidelity stage because of its small size, 
+                        caused question for which features were available for participants to engage with.</p>
+                    <p><strong>Improvements: </strong>To mitigate these concerns, the caret button on the pages have been changed to be solid, have shadow drop-down effects, and 
+                    have wider area to click. Or users can choose other areas close to the caret button to activate it's purpose (like the image icon). For example, the photo icon shown in the feed is seen to be used to explore the design and create 
+                a post. Additionally, the heart icon has increased in size and can now be clicked to show a liked post. Icons and elements were experiemntally moved to create better transparency.</p>
                         <blockquote>
-                            “I think it would be cool to see what other people are making, and I might get ideas from that.”
-                            </blockquote>    
+                            If the button could be expanded a little bit to include a larger area... because that just feels more intuitive.”
+                        </blockquote>  
+                        <blockquote>
+                            I think the button was a little bit finicky, especially if you're doing it on your phone really quickly. If you're trying to click on it, you have to click in one specific place."
+                            </blockquote> 
+                            <blockquote>
+                            It would just be more intuitive, if the heart was there."
+                            </blockquote>
+                        <blockquote>
+                            I was feeling confused... this is just a prototype, so I wasn't sure if it would click on it actually."
+                        </blockquote>   
                 </div>
                 <!-- Video clip 2 -->
-                <video controls aria-label="Clip 2: Filtering and tagging food allergies" style="width: 300px; height: auto;">
-                    <source src="videos/clip2.mp4" type="video/mp4">
+                <video controls aria-label="Clip 2: New button styles." style="width: 300px; height: auto;">
+                    <source src="fig3/buttons.mp4" type="video/mp4">
                 </video>
             </div>
         </li>
         <li>
             <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
                 <div style="flex: 1; margin-right: 20px;">
-                    <strong>Users shall be able to make reviews in three optional formats; images, predetermined slider or number system, or text input.</strong>
-                    <p><em>Application in Prototype 2: </em> On the review page, users are able to use multiple metrics such as sliders, a text input box, uploading an image, 
-                        and a 5-star numbering system.</p>
+                    <strong>Participants recommended new engaging feautures for student interests.</strong>
+                    <p></br><strong>Overview: </strong>Participants brought up interesting perspectives regarding what users would potentially seek when using a food rating app. One user suggested a themed interface, 
+                        similar to how the dining halls offer unique meals depending on the holiday or season. There was also the suggestion to have a rating option for the posts themselves, so not only does 
+                        the meal receive a rating from the poster, but others can also rate the public post, which almost acts as a precautionary moderating system. Lastly, a participant noted that students on 
+                        the platform would likely want to communicate with fellow students, especially within POC spaces.</p>
+                        <p><strong>Improvements: </strong>This feedback opened the door to further developing the "add friends" feature or private post option. This feedback led to the creation of a text or chat option 
+                            for the prototype. People would be able to create their own group chats and add friends they'd like. Additionally, as seen in the video, rating systems via upvotes and downvotes have been 
+                            implemented. There is also an example of themed app changes, such as autumn colors during Halloween, as well as changed voting buttons and styling.</p>
                         <blockquote>
-                            “I think it would be cool to see what other people are making, and I might get ideas from that.”
-                            </blockquote>        
+                            Or have monthly themes like on Reddit... applying to college on Ivy day. The upvote was Harvard, and then the down vote was the Yale”
+                        </blockquote>        
+                        <blockquote>
+                            Having a rating system... like or upvotes and downvotes, but then it can get heated."
+                        </blockquote>  
+                        <blockquote>
+                            There's [regarding meals] like a thing where it's, 'what did POC say?'... It would be funny. Like, you know, 'does it get the black vote?'""
+                        </blockquote>
                 </div>
                 <!-- Video clip 3 -->
-                <video controls aria-label="Clip 3: Creating a review with text and number system" style="width: 300px; height: auto;">
-                    <source src="videos/clip3.mp4" type="video/mp4">
+                <video controls aria-label="Clip 3: Messaging options and voting." style="width: 300px; height: auto;">
+                    <source src="fig3/votes_themes_chats.mp4" type="video/mp4">
+                </video>
+            </div>
+        </li>
+        <li>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <strong>Organize review and recipe forms.</strong>
+                    <p></br><strong>Overview: </strong>A participant noticed that the forms for review and the page can be organized to deliberately separate mandatory and optional 
+                        items on their respective pages. The participant mentioned that users can become stuck on forms due to the confusion of what elements are needed 
+                        to complete the post, which may cause user frustration.</p>
+                    <p><strong>Improvements: </strong>This advice is great for creating a platform that is easy for users to explore. Due to this concern, and the fear that users 
+                        would dismiss more important items, the order of the post elements has been changed. Basic information remains at the top, which is the same, but now, 
+                        the food tags and ingredient list inputs have been prioritized over all other inputs due to the safety issues that ignoring these tags may cause.
+                        The lack of those inputs filled would diminish the purpose of CarlsEat. Thoughtful rating are encouraged and disclaimer of ingrediants are encouraged.</p>
+                        <blockquote>
+                            sometimes we’re forced to go through forms where it makes you have mandatory ones mixing with optional."
+                        </blockquote>  
+                        <blockquote>
+                            I think it's important to have certain stuff be mandatory… and then they can add the photo and like the optional stuff."
+                        </blockquote>
+                </div>
+                <!-- Video clip 4 -->
+                <video controls aria-label="Clip 4: Posts ordered from highest to lowest priority." style="width: 300px; height: auto;">
+                    <source src="fig3/changed_posts.mp4" type="video/mp4">
                 </video>
             </div>
         </li>
@@ -317,131 +315,84 @@
      </section>
 
     <!-- Future Steps w/ Justifications-->
-    <section>
-        <h2>Future Steps from High-Fidelity Protype & Justification</h2>
-        <p>statement &rarr; justification </p>
-        <p>statement &rarr; justification</p>
-        <p>statement &rarr; justification </p>
+    <section id="future_steps">
+        <h2>Future Steps from High-Fidelity Prototype & Justifications</h2>
+        <p>
+            <strong>Additional workflows :</strong> <span class="arrow">&xrarr;</span> For my focus group's 2nd metric, there was a high rate of clickable errors, which was mitigated by my team's average scores for their error metric. A future step 
+            would be to ensure that elements users would assume are usable features of the prototype are always interactable in some way unless the object is designed to be static. I consider this a future step because, although
+            some workflows have been added to the high-fidelity prototype, there could still be more potential workflows added with additional user testing. Additionally, given the limited timeframe to make the prototype elements 
+            fully interactable within the course's timeframe, a specific future step is to add additional workflows to elements not addressed in previous user testing.
+        </p>
+        <p>
+            <strong>Consistent layout: </strong> <span class="arrow">&xrarr;</span> Styling the Figma prototype in a consistent format has been difficult, as this is the first time I have used Figma. A future endeavor to pursue would be to check if 
+            my button sizing, color palette, and general design choices appear consistent and intuitive in future rounds of user testing. Feedback I received highlighted that my design was well-received, but the design could still 
+            be improved in terms of consistency throughout the pages, particularly in relation to the feedback on workflows. The design layout and what users see as interactable objects directly correlate with each other. Many of 
+            the user suggestions were about buttons or not understanding which parts were interactable, so by fixing the styling, user feedback would be satisfied. A complete user interface design with cohesion would help future viewers
+            of the prototype.
+        </p>
+        <p>
+            <strong> Drawbacks of Feedback: </strong><span class="arrow">&xrarr;</span> However, with the addition of several new features, I found it challenging to maintain an aesthetically pleasing design that didn’t feel overcrowded. At times, it felt 
+            like there were too many features in one space, making the interface feel a bit cluttered. Despite following the feedback and requirements, a more minimalist approach to design might help improve the overall user experience. 
+            Simplifying the interface while retaining all necessary features could make it easier for users to navigate and engage with the app design without feeling overwhelmed.
+        </p>
+        <p>
+            <strong>Comment Options: </strong><span class="arrow">&xrarr;</span> If our team hypothetically restarted the Requirements Generation, I believe it would have been best to add a requirement indicating that some sort of comment section is 
+            mandatory, since my user feedback primarily focused on not being able to comment on users' posts. Additionally, my teammates naturally added a comment section in their prototypes, so adding this requirement would not be 
+            labor-intensive, but rather would add transparency to a feature I initially overlooked.
+        </p>
+        <p>
+            <strong>Themed Months or Holiday Features: </strong><span class="arrow">&xrarr;</span> Users showed interest in the concept of themed months or holiday features (e.g., special design changes for Halloween or Valentine's Day). A future step would be to implement a toggle 
+            feature that allows users to switch between different themes for different months or holidays, enhancing the fun and personalized experience of the app.
+        </p>
+        <p>
+            <strong> Bon App Menu: </strong><span class="arrow">&xrarr;</span> One suggestion was the integration of the design with existing dining services, such as Carleton’s menu options. The Menu page has a menu button for each dining hall, but is not interactable due to Bon App's 
+            changing daily menus. A future step would be to explore how adding Bon App's menu could be achieved through my design. This would provide more relevant and real-time information to users.
+        </p>
+        <p>
+            <strong>Accessibility Features: </strong><span class="arrow">&xrarr;</span> One area that could be improved is the accessibility of the prototype. A participant mentioned that they found the design easy to read which surprised them to due their dyslexia. Which leads to other 
+            improvements in design that could benefit different users with varying needs like if someone could use this design with features like screen reader compatibility, high-contrast modes, or keyboard navigation. A future step would be to ensure the prototype complies 
+            with WCAG (Web Content Accessibility Guidelines) to improve accessibility for all users, particularly those with disabilities. This would positively impact the range of users needed to test the design.
+        </p>
     </section>
 
-  <!-- Figma Prototype 3 -->
-  <section>
+    <!-- Figma Prototype 3 -->
+    <section id="prototype-3">
     <h2>High-Fidelity Figma Prototype 3</h2>
-    <p>Below are screenshots of my mid-fidelity prototype, showing the main interface and essential features:</p>
+    <p>Below showcases the complete high-fidelity prototype for CarlsEat, displaying the main interface and essential features while also showing the workflows that direct the user after each click:</p>
+        <!-- Links to file and walkthrough -->
+        <a href="https://www.figma.com/design/x19panX320ZmNbw663Lk9l/figma-prototype-3-carlseat?node-id=0-1&t=3ou7XemjJKX6M8hO-1" target="_blank" aria-label="View Figma Prototype 3 design file">Click here to view the Figma Prototype 3 High-Fidelity design file</a><br>
+        <a href="https://www.figma.com/proto/x19panX320ZmNbw663Lk9l/figma-prototype-3-carlseat?node-id=1-3&p=f&t=4hv2lMiAzTOBYvR3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3" target="_blank" aria-label="View Figma Prototype 3 High-Fidelity prototype walkthrough">Click here to visit the Figma Prototype 3 walkthrough</a></p>
 
-    <div class="content-wrapper">
-        <div>
-            <img src="fig2/log.png"
-                alt="Screenshot of CarlsEat prototype 2 Login or Guest Page">
-            <p><strong>Login or Guest Page:</strong> Login screen with username and password fields or a guest
-                option.</p>
-        </div>
-        <div>
-            <img src="fig2/home.png"
-                alt="Screenshot of CarlsEat prototype 2 Homepage">
-            <p><strong>Homepage:</strong> Welcoming homepage with a navigation menu and search bar.
-                Including the renaming of the Review Page to now Feed.</p>
-        </div>
-        <div>
-            <img src="fig2/profile.png"
-                alt="Screenshot of CarlsEat prototype 2 Profile Page">
-            <p><strong>Profile:</strong> A redesigned Profile page showing user details and potential saved 
-                recipes, reviews, and feedback forms.</p>
-        </div>
-        <div>
-            <img src="fig2/feed.png"
-                alt="Screenshot of CarlsEat prototype 2 Feed Page">
-            <p><strong>Feed:</strong> An interactive feed for users to share recipes, reviews, like posts, and add
-                friends.</p>
-        </div>
-        <div>
-            <img src="fig2/expanded_review_feed.png"
-                alt="Screenshot of CarlsEat prototype 2 Expanded Review Example">
-            <p><strong>Expanded Review Example:</strong> An example of expanding a review from the Feed page. Users
-                can see see the star rating of the meal, metrics of numerical ratings, highlighted food tags, a user's text 
-                describing the meal, and a heart icon to like the post.</p>
-        </div>
-        <div>
-            <img src="fig2/expanded_recipe_feed.png"
-                alt="Screenshot of CarlsEat prototype 2 Expanded Recipe Example">
-                <p><strong>Expanded Recipe Example:</strong> An example of expanding a recipe post from the Feed page. Users
-                    can see see the star rating of the meal, highlighted food tags, text describing the recipe making process, 
-                    and a heart icon to like the post.</p>
-        </div>
-        <div>
-            <img src="fig2/create_on_feed.png"
-                alt="Screenshot of CarlsEat prototype 2 Feed Page's Create Button">
-            <p><strong>Create Button:</strong> When the create button in the upper right corner is pressed, the background
-                    blurs while the icon turns blue. Three dropdown buttons are shown; Review, Recipe, and Feedback.</p>
-        </div>
-        <div>
-            <img src="fig2/feed_buttons.png"
-            alt="Screenshot of CarlsEat prototype 2 Feed Page's Create Button - Review Option">
-            <p><strong>Create Review Button:</strong> When users click the Review button, the option changes color to white showing it
-                has been selected before transporting to a page for making a review.</p>
-        </div>
-        <div>
-            <img src="fig2/create_recipe_feed.png"
-            alt="Screenshot of CarlsEat prototype 2 Feed Page's Create Button - Recipe Option">
-            <p><strong>Create Recipe Button:</strong> When users click the Recipe button, the option changes color to white showing it
-                has been selected before transporting to a page for making a recipe.</p>
-        </div>
-        <div>
-            <img src="fig2/make_review.png"
-                alt="Screenshot of CarlsEat prototype 2 Create Review Page">
-            <p><strong>Create Review Page:</strong> Users who have selected the Review button will see a their profile picture and name in a text 
-                box prompting for a subject name, location details (exampele: was the meal at a dining hall or elsewhere), and their meal plan type. There is then 
-                a slider scale of 1 to 10 for three metrics to rate the meal. There is a food hashtag section showing examples with blue highlighted 
-                text. And then a user input box to insert any more details if wanted and a star rating choice. There is a post button
-                and a camera icon to take a photo of the meal.</p>
-        </div>
-        <div>
-            <img src="fig2/review_post_button.png"
-                alt="Screenshot of CarlsEat prototype 2 Create Review Post Button">
-            <p><strong>Create Review Post Button:</strong> When the Post button is selected users are shown the dropwdown buttons; friends, public, and 
-                anonymous. Public sends the review to the Feed Page. Anonymous sends the review to the Feed Page without public username details. Friends changes the 
-                vsibiity of the review to the friends the user has added. </p>
-        </div>
-        <div>
-            <img src="fig2/make_recipe.png"
-                alt="Screenshot of CarlsEat prototype 2 Create Recipe Page">
-            <p><strong>Create Recipe Page</strong>  Users who have selected the Recipe button will see a their profile picture and name in a text 
-                box prompting for a subject name, location details (example: was the meal made on a campus kitchen, home, or elsewhere), and their meal plan type. 
-                There is a post button and a camera icon to take a photo of the meal. There is a food hashtag section showing examples with
-                blue highlighted text. There is an ingrediants section under the food tags so users can view an ingrediants list. Lastly, the user input text 
-                section for the user to detail how to create the recipe.               
-            </p>
-        </div>
-        <div>
-            <img src="fig2/recipe_post_button.png"
-                alt="Screenshot of CarlsEat prototype 2 Create Recipe Post Button">
-            <p><strong>Create Recipe Post Button:</strong> When the Post button is selected users are shown the dropwdown buttons; friends, public, and 
-                anonymous. Public sends the recipe to the Feed Page. Anonymous sends the review to the Feed Page without public username details. Friends changes the 
-                vsibiity of the recipe to the friends the user has added.</p>
-        </div>
-        <div>
-            <img src="fig2/menu.png"
-                alt="Screenshot of the CarlsEat prototype 2 Menu Page">
-            <p><strong>Menu Page</strong> Menu screen showing all campus dining areas each with a collapsible 
-                caret icon. Star ratings accumalted from reviews are avaiable, as well as more details of the dining hall. 
-                There is a menu button to see the chosen dining hall's menu, a button to see other reviews of the selected dining hall,  
-                and a feedback button to view the feedback form.</p>
-        </div>
-        <div>
-            <img src="fig2/feedback.png"
-                alt="Screenshot of the CarlsEat prototype 2 Feedback Form">
-            <p><strong>Feedback Form</strong> A new feedback form, so users can contact admin or Bon App staff about concerns ranging 
-                from cross-contamination issues, recommendations, or any general feedback</p>
-        </div>
-        <p>Icons are sourced from the Figma Library and FigJam tutorial. Imagery of
-                Carleton's campus photo and logo are not owned by me. ฅ՞•ﻌ•՞ฅ </p>
-    </div>
-</section>
+                <!-- Video clip 1 -->
+                 <div class ="center">
+                <video controls aria-label="Clip: Complete Figma 3 High Fidelity Showcase with Flows" style="width: 900px; height: auto;">
+                    <source src="fig3/figma3.mp4" type="video/mp4">
+                </video>
+                </div>
+                
+                <h3>Kudos Recieved During UX Evaluation</h3>
+                <blockquote>
+                    I feel like it was pretty easy, because I figured it out pretty quick"
+                </blockquote>        
+                <blockquote>
+                    I just like the simplicity of it... I think
+                    you put a lot of effort and thought, and I think
+                     it looks really good. And again, I think you really
+                      focus on user usability and you know I hate apps that
+                       are too complicated and are ugly. So, you know, I think
+                        this would be a really straightforward app for people.                    
+                </blockquote>  
+                <blockquote>
+                    It’s super easy. I like the colors and theme, you know, like 
+                    super accessible, especially people with dyslexia, like I'm 
+                    reading it well."
+                </blockquote>
+            </section>
 
     <!-- Team UX Research Process Section Based on Team Deliverable: Requirements Elicitation Protocols -->
-    <!--https://www.w3schools.com/Tags/tag_blockquote.asp-->
-    <section>
-            <h2>Team UX Research Process</h2>
+    <!--SOURCE: https://www.w3schools.com/Tags/tag_blockquote.asp-->
+    <section id="ux_research_overview">
+            <h2>Team UX Research Process for Requirements Elicitation Protocols</h2>
             <p>
             Our team conducted a combination of <strong>semi-structured interviews</strong> and <strong>focus groups</strong> to gather user insights. The research process included:
             </p>
@@ -468,9 +419,9 @@
     </section>
     
      <!-- Team Analysis Process Section Based on Team Deliverable: Requirements Generation -->
-    <!--https://www.w3schools.com/TAgs/tag_figcaption.asp--> 
-    <section>
-        <h2>Team Analysis Process</h2>
+     <!--https://www.w3schools.com/TAgs/tag_figcaption.asp--> 
+    <section id="ux_research_analysis">
+        <h2>Team Analysis Process for Requirements Elicitation Protocols</h2>
         <p>
         Our team utilized <strong>axial coding</strong> and <strong>affinity diagramming</strong> 
         to analyze our interview transcripts and build consensus for our requirement statements. 
@@ -506,7 +457,7 @@
     
     <!-- Requirement Statements Section & Description Section for Prototype 2-->
      <!--https://www.w3schools.com/tags/tag_video.asp-->
-    <section>
+     <section id="requirement_statements">
         <h2>Requirement Statements & Applications for Figma Prototype 2</h2>
         <p>Below are the finalized requirement statements our team developed, along with explanation of how each will be applied in the prototype:<br>
         <!-- Links to file and walkthrough -->
@@ -796,7 +747,7 @@
 </section>
 
     <!-- Figma Prototype 2 -->
-    <section>
+    <section id="prototype-2">
         <h2>Mid-Fidelity Figma Prototype 2</h2>
         <p>Below are screenshots of my mid-fidelity prototype, showing the main interface and essential features:</p>
 
@@ -910,7 +861,7 @@
     </section>
 
     <!-- Figma Prototype 1-->
-    <section>
+    <section id="prototype-1">
         <h2>Low-Fidelity Figma Prototype 1</h2>
         <p>Below are screenshots of my low-fidelity prototype, showing the main interface and essential features:</p>
 
@@ -953,7 +904,7 @@
     </section>
 
     <!-- User Needs & Concerns Section: Requirements Elicitation-->
-    <section>
+    <section id="user_needs-1">
         <h2>How the Prototype Addresses User Needs for Figma Prototype 1</h2>
         <p>
             Based on our user research and the elicitation process, which included focus groups and interviews with
@@ -975,24 +926,49 @@
         </p>
     </section>
 
-    <!--  https://www.w3schools.com/JS/tryit.asp?filename=tryjs_alert  -->
-    <!-- Under Construction PopUp -->
-    <script>
-        // Function to show pop up message
-        function UnderConstructionMessage() {
-            alert("Tricked you! The full prototype is still under construction. Please check back later!");
-        }
-    </script>
-    <section class="button-section">
-        <button class="button" onclick="UnderConstructionMessage()">Full Prototype?</button>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p><i>This page is under construction. Check back soon!</i></p>
-        <p><i>ฅ՞•ﻌ•՞ฅ</i></p>
+        <p>ฅ՞•ﻌ•՞ฅ Thank you for stopping by! ฅ՞•ﻌ•՞ฅ<p>
     </footer>
 
-</body>
+    <!-- Back to Top Button Implemented from Main Website's Template -->
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+    <script>
+        // JavaScript function to toggle the project details
+        function toggleDetails(projectNumber) {
+            var details = document.getElementById('project' + projectNumber + '-details');
+            var allDetails = document.querySelectorAll('.project-details');
+            allDetails.forEach(function(detail) {
+                if (detail !== details) {
+                    detail.style.display = "none";
+                    detail.style.height = "0";
+                }
+            });
+            if (details.style.display === "block") {
+                details.style.display = "none";
+                details.style.height = "0";
+            } else {
+                details.style.display = "block";
+                details.style.height = "auto";
+            }
+        }
+        // JavaScript function to show the Back to Top button when scrolling
+        window.onscroll = function() {
+            var backToTopButton = document.getElementById("backToTop");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+    
+        // Function to scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+        </script>
 
+    </body>
 </html>
